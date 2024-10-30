@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday</title>
+    <style>
+        body {
+            background-color: #f0f8ff;
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            color: #ff69b4;
+            font-size: 60px;
+            margin-top: 50px;
+        }
+        p {
+            font-size: 20px;
+            color: #555;
+        }
+        .message {
+            font-size: 24px;
+            font-weight: bold;
+            color: #ff4500;
+        }
+        .container {
+            margin-top: 50px;
+        }
+        .button {
+            padding: 15px 25px;
+            font-size: 18px;
+            background-color: #ff1493;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #ff69b4;
+        }
+        .balloons {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Happy Birthday!</h1>
+    <p class="message">Chúc mừng sinh nhật bé yêuuu ❤ </p>
+    <div class="container">
+        <p>Chúc bé luôn xinh đẹp😘, hạnh phúc và gặp nhiều may mắn😔, chúc bé luôn vuii vẻ😁, có nhiềuu tiền 😍😍, học siêu giỏi, sức khỏe tốt, mọi thứ tốt đều đến với bé 😎👌! </p>
+        <p>Cảm ơn bé vì đã đến bên tớ, được yêuuu bé là điều siêuuuu tuyệt vờiiiiii hú hú oleleolala dop dop yes yes skibidi 🎉🎉🎉 </p>
+        <button class="button" onclick="showMessage()">Omg omg bumbumbalabum 😭🤯</button>
+    </div>
+
+    <div id="surprise-message" style="display:none;">
+        <h2>Surprise! yeahhhhhh, hihi bất ngờ đó 😔👌</h2>
+        <p>Chúc mừng sinh nhật lần nữaaaa!!!! tớ yêu em bé siêuuu nhiềuuuu ạ 😏</p>
+    </div>
+
+    <div class="balloons">
+        <!-- Thêm các hiệu ứng bóng bay nếu muốn -->
+    </div>
+
+    <script>
+        function showMessage() {
+            document.getElementById('surprise-message').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
