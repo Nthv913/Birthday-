@@ -11,6 +11,7 @@
             text-align: center;
             margin: 0;
             padding: 0;
+            overflow: hidden; /* Ngăn cuộn trang */
         }
         h1 {
             color: #ff69b4;
@@ -41,12 +42,15 @@
         .button:hover {
             background-color: #ff69b4;
         }
-        .balloons {
+        .balloon {
             position: absolute;
             bottom: 0;
-            width: 100%;
-            height: 100%;
-            pointer-events: none;
+            animation: float 6s infinite;
+        }
+        @keyframes float {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0); }
         }
     </style>
 </head>
@@ -64,13 +68,11 @@
         <p>Chúc mừng sinh nhật lần nữaaaa!!!! tớ yêu em bé siêuuu nhiềuuuu ạ 😏</p>
     </div>
 
-    <audio autoplay loop>
-        <source src="birthday_song.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-    </audio>
-
     <div class="balloons">
-        <!-- Thêm các hiệu ứng bóng bay nếu muốn -->
+        <img src="balloon.png" alt="Balloon" class="balloon" style="left: 10%; width: 80px; animation-duration: 6s;">
+        <img src="balloon.png" alt="Balloon" class="balloon" style="left: 30%; width: 100px; animation-duration: 7s;">
+        <img src="balloon.png" alt="Balloon" class="balloon" style="left: 60%; width: 90px; animation-duration: 5s;">
+        <img src="balloon.png" alt="Balloon" class="balloon" style="left: 80%; width: 70px; animation-duration: 8s;">
     </div>
 
     <script>
